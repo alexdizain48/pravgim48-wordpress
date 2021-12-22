@@ -4,12 +4,12 @@ add_action('after_setup_theme', 'prav_setup');
 add_action('wp_enqueue_scripts', 'prav_register_style');
 add_action('wp_enqueue_scripts', 'prav_register_script');
 add_action('widgets_init', 'prav_register_widgets');
+//add_filter('widget_text', 'do_shortcode');
 
 add_filter('show_admin_bar', '__return_false');
 add_filter('fallback_intermediate_image_sizes', 'wpb_disable_pdf_previews');
 add_filter( 'intermediate_image_sizes', 'delete_intermediate_image_sizes' );
 function delete_intermediate_image_sizes( $sizes ){
-    // размеры которые нужно удалить
     return array_diff( $sizes, [
         'medium_large',
         'large',

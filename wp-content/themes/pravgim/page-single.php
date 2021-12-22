@@ -1,12 +1,18 @@
-<?php get_header()?>
+<?php
+/*
+  Template Name: Простые страницы
+ */
+get_header();
+?>
+
     <!---------- CONTENTwrap ------------>
     <section>
         <div class="row">
             <div class="col-md-12">
                 <div class="infoGimn">
-                    <h1>Ошибка 404</h1>
+                    <h1><?php echo get_the_title(); ?></h1>
 
-                    <h2>Такой страницы не существует</h2>
+                    <?php echo get_the_content(); ?>
 
                     <div class="clearfix"></div>
 
@@ -18,4 +24,8 @@
         </div>
     </section>
     <!---------- endCONTENTwrap ------------>
-<?php get_footer()?>
+
+
+<?php
+get_footer();
+?>
