@@ -245,7 +245,7 @@ img {
 .infoGimn .btn-success:hover {
     background-color: #9DA32B;
     background-image: none;
-    transition: background-position 0.1s lineral 0s;
+    transition: background-position 0.1s;
 }
 
 .infoGimn .btnHref a {
@@ -268,6 +268,7 @@ img {
 
 .date {
     text-indent: 0 !important;
+    margin-top: 10px !important;
     margin-bottom: 10px !important;
     color: #1b769e !important;
 }
@@ -1942,10 +1943,34 @@ a:focus {
     display: table;
 }
 
-.pagination-sm > li > a, .pagination-sm > li > span {
+.pagination-sm > li > a {
     font-size: 12px;
     padding: 0 auto;
     text-align: center;
+}
+
+.pagination-sm > li > span {
+    font-size: 12px;
+    padding: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #3fa945;
+}
+
+.pagination-sm > li > a:hover {
+    font-size: 12px;
+    padding: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #3fa945;
+}
+
+.pagination-sm > li > span, .pagination-sm > li > span:hover {
+    font-size: 12px;
+    padding: 0 auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #3fa945;
 }
 
 .infoGimn .spisokLiz ul {
