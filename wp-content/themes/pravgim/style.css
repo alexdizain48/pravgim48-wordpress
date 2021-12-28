@@ -1,6 +1,10 @@
 /*
 Theme Name: Pravgim
 */
+p:empty {
+    display: none;
+}
+
 .single-post-page .wp-block-image  {
     margin-top: 10px;
 }
@@ -237,13 +241,13 @@ img {
 }
 
 .infoGimn .btn-success {
-    background-color: #9DA32B;
-    background-image: linear-gradient(to bottom, #C5CD36, #9DA32B);
+    background-color: #6B9A1E;
+    background-image: linear-gradient(to bottom, #84bf24, #6b9a1e);
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
 .infoGimn .btn-success:hover {
-    background-color: #9DA32B;
+    background-color: #6b9a1e;
     background-image: none;
     transition: background-position 0.1s;
 }
@@ -255,6 +259,12 @@ img {
 .infoGimn .btnHref a:hover {
     color: #FFF;
 }
+
+/*.btnCategory .btn-success {
+    background-color: #6B9A1E;
+    background-image: linear-gradient(to bottom, #84bf24, #6b9a1e);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}*/
 
 .panel-heading h2 {
     margin-top: 6px !important;

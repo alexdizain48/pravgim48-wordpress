@@ -28,23 +28,8 @@ $title = single_cat_title('', false);
                                             </h2>
                                         </div>
                                         <div class="panel-body">
+                                            <p class="date text-left"><?php echo get_the_date('j F Y'); ?></p>
                                             <p><?php echo get_the_excerpt(); ?></p>
-                                            <!--<p class="date text-left">09-10-2015</p>-->
-                                            <p class="date text-left"><?php
-                                                if (strtotime(get_the_date('Ymd'))<strtotime(get_the_modified_date('Ymd'))) {
-                                                    echo "Опубликовано: ";
-                                                    the_date('j F Y');
-                                                    echo " / Обновлено: ";
-                                                    the_modified_date('j F Y');
-                                                }
-                                                else {
-                                                    echo "Опубликовано: ";
-                                                    the_date('j F Y');
-                                                }
-                                                ?></p>
-                                            <p>9 октября 2015 года в Православной гимназии имени прп. Амвросия Оптинского
-                                                прошел
-                                                праздник "Мы - пятиклассники"...</p>-->
                                             <a href="<?php the_permalink(); ?>" class="pull-right">Подробнее...</a>
                                         </div>
                                     </div>

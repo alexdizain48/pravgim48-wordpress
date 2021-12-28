@@ -3,59 +3,62 @@ get_header();
 if (is_home()):
     ?>
 
-    <?php get_template_part('tmp/breadcrumbs');?>
+    <?php get_template_part('tmp/breadcrumbs'); ?>
 
     <section>
         <div class="row">
             <div class="col-md-12">
                 <div class="infoGimn">
                     <!--------- CONTENT ------------>
-                    <h1>Новости</h1>
+                    <h1>Лента событий</h1>
+
+                    <?php $categories = get_categories();
+                    if ($categories):
+                        ?>
+                        <div class="row btnHref">
+                            <div class="col-md-12">
+                                <div class="btn-group">
+                                    <?php
+                                    foreach ($categories as $cat):
+                                        $cat_link = get_category_link($cat->cat_ID)
+                                        ?>
+                                        <a href="<?php echo $cat_link; ?>" class="btn btn-large btn-success">
+                                            <?php echo $cat->name; ?>
+                                        </a>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    <?php endif; ?>
+
                     <?php
                     if (have_posts()):
                         ?>
                         <div class="row">
                             <div class="col-md-12">
-
                                 <?php
                                 while (have_posts()):
                                     the_post();
                                     ?>
                                     <div class="panel panel-info">
                                         <div class="panel-heading">
-                                            <!-- <h2 class="panel-title">Праздник "Мы-пятиклассники!</h2>-->
                                             <h2 class="panel-title">
                                                 <?php the_title(); ?>
                                             </h2>
                                         </div>
                                         <div class="panel-body">
+                                            <p class="date text-left"><?php echo get_the_date('j F Y'); ?></p>
                                             <p><?php echo get_the_excerpt(); ?></p>
-                                            <p class="date text-left"><?php
-
-                                                the_date('j F Y');
-                                                /*if (strtotime(get_the_date('Ymd'))<strtotime(get_the_modified_date('Ymd'))) {
-                                                    echo "Опубликовано: ";
-                                                    the_date('j F Y');
-                                                }
-                                                else {
-                                                    echo "Опубликовано: ";
-                                                    the_date('j F Y');
-                                                }*/
-                                                ?></p>
-                                            <!--<p class="date text-left">09-10-2015</p>
-                                            <p>9 октября 2015 года в Православной гимназии имени прп. Амвросия Оптинского
-                                                прошел
-                                                праздник "Мы - пятиклассники"...</p>-->
                                             <a href="<?php the_permalink(); ?>" class="pull-right">Подробнее...</a>
                                         </div>
                                     </div>
-                                <?php endwhile;?>
-
+                                <?php endwhile; ?>
                             </div>
                         </div>
                         <?php
                     else:
-                       get_template_part('tmp/no-posts');
+                        get_template_part('tmp/no-posts');
                     endif;
                     ?>
 
@@ -68,7 +71,7 @@ if (is_home()):
                     <div class="clearfix"></div>
 
                     <div class="dividerKredo">
-                        <img src="<?php echo _prav_assets_path( 'uploads/img/dividerKredo.png' ) ?>">
+                        <img src="<?php echo _prav_assets_path('uploads/img/dividerKredo.png') ?>">
                     </div>
                     <!--------- EndCONTENT ------------>
                 </div>
@@ -85,35 +88,41 @@ else:
             <div class="col-md-12">
                 <div class="infoGimn">
                     <!--------- CONTENT ------------>
-                    <h1>Новости</h1>
+                    <h1>Лента событий</h1>
+
+                    <div class="row btnHref">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-large btn-success">Новсти</a>
+                                <a href="#" class="btn btn-large btn-success">Достижения</a>
+                                <a href="#" class="btn btn-large btn-success">Объявления</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
                     <?php
                     if (have_posts()):
                         ?>
                         <div class="row">
                             <div class="col-md-12">
-
                                 <?php
                                 while (have_posts()):
                                     the_post();
                                     ?>
                                     <div class="panel panel-info">
                                         <div class="panel-heading">
-                                            <!-- <h2 class="panel-title">Праздник "Мы-пятиклассники!</h2>-->
                                             <h2 class="panel-title">
                                                 <?php the_title(); ?>
                                             </h2>
                                         </div>
                                         <div class="panel-body">
+                                            <p class="date text-left"><?php echo get_the_date('j F Y'); ?></p>
                                             <p><?php echo get_the_excerpt(); ?></p>
-                                            <!--<p class="date text-left">09-10-2015</p>
-                                            <p>9 октября 2015 года в Православной гимназии имени прп. Амвросия Оптинского
-                                                прошел
-                                                праздник "Мы - пятиклассники"...</p>-->
                                             <a href="<?php the_permalink(); ?>" class="pull-right">Подробнее...</a>
                                         </div>
                                     </div>
-                                <?php endwhile;?>
-
+                                <?php endwhile; ?>
                             </div>
                         </div>
                         <?php
@@ -124,14 +133,14 @@ else:
 
                     <div class="row">
                         <div class="col-md-12">
-                            <?php the_posts_pagination() ; ?>
+                            <?php the_posts_pagination(); ?>
                         </div>
                     </div>
 
                     <div class="clearfix"></div>
 
                     <div class="dividerKredo">
-                        <img src="<?php echo _prav_assets_path( 'uploads/img/dividerKredo.png' ) ?>">
+                        <img src="<?php echo _prav_assets_path('uploads/img/dividerKredo.png') ?>">
                     </div>
                     <!--------- EndCONTENT ------------>
                 </div>

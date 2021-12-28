@@ -47,30 +47,50 @@
     <div class="col-md-6 newsBlock">
         <h3>Новости</h3>
         <ul>
-            <li><a href="index_newsView.html">05.12.2014&nbsp;-&nbsp;X Международный форум "Задонские
-                    Свято-Тихоновские образовательные чтения"</a></li>
-            <li><a href="index_newsView.html">04.12.2014&nbsp;-&nbsp;Божественная литургия</a></li>
-            <li><a href="index_newsView.html">04.12.2014&nbsp;-&nbsp;Гимназисты написали итоговое сочинение</a></li>
-            <li><a href="index_newsView.html">02.12.2014&nbsp;-&nbsp;Муниципальный этап Всероссийской олимпиады
-                    школьников</a></li>
-            <li><a href="index_newsView.html">02.12.2014&nbsp;-&nbsp;"Мамин день" во 2 "А" классе</a></li>
-            <li><a href="index_newsView.html">01.12.2014&nbsp;-&nbsp;Областная акция "Дорога глазами детей"</a></li>
+            <?php
+            $args = array(
+                'numberposts' => 5,
+                'category' => 5,
+                'post_status' => 'publish',
+            );
+            $result = wp_get_recent_posts( $args );
+            foreach( $result as $p ){
+                ?>
+                  <li><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></li>
+                <?php
+            }
+            ?>
         </ul>
-        <a class="more" href="index_news.html"><p>Все новости</p></a>
+        <?php
+           $category_id = get_cat_ID( 'Новости' );
+           $category_link_news = get_category_link( $category_id );
+        ?>
+        <a class="more" href="<?php echo $category_link_news; ?>"><p>Все новости</p></a>
     </div>
 
     <div class="col-md-6 advert mb15">
         <div class="advertBG">
             <h3>Объявления</h3>
             <ul>
-                <li>02.12.2014&nbsp;-&nbsp;В соответствии с годовым календарным графиком с 3 по 9 ноября 2014 года в
-                    Православной гимназии проводятся Казанские каникулы.
-                </li>
-                <li>02.06.2014&nbsp;-&nbsp;29 августа 2014 года в 10.00 в гимназическом дворе состоится встреча
-                    учащихся с классными руководителями 1-11 классов.
-                </li>
+                <?php
+                $args = array(
+                    'numberposts' => 2,
+                    'category' => 6,
+                    'post_status' => 'publish',
+                );
+                $result = wp_get_recent_posts( $args );
+                foreach( $result as $p ){
+                    ?>
+                    <li><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></li>
+                    <?php
+                }
+                ?>
             </ul>
-            <a class="more" href="index_doska.html"><p>Подробнее....</p></a>
+            <?php
+               $category_id = get_cat_ID( 'Объявления' );
+               $category_link_advert = get_category_link( $category_id );
+            ?>
+            <a class="more" href="<?php echo $category_link_advert; ?>"><p>Подробнее....</p></a>
         </div>
     </div>
 </div>
@@ -104,9 +124,6 @@
             <li><a href="http://mitropolia-lip.ru/">Официальный сайт Липецкой Митрополии</a></li>
             <li><a href="http://www.doal.ru/news/news.php">Официальный сайт департамента образования администрации
                     г.Липецка</a></li>
-            <li><a href="http://www.deptno.lipetsk.ru/">Официальный сайт Управления образования и науки
-                    г.Липецка</a>
-            </li>
             <li><a href="http://www.optina.ru/">Официальный сайт Введенского Ставропигиального мужского
                     монастыря</a>
             </li>
@@ -146,7 +163,11 @@
     <div class="col-sm-12 col-md-4 mb15 text-center">
         <h3>Достижения</h3>
         <div class="pano">
-            <a href="/news/dostizheniya">
+            <?php
+               $category_id = get_cat_ID( 'Достижения' );
+               $category_link_advert = get_category_link( $category_id );
+            ?>
+            <a href="<?php echo $category_link_advert; ?>">
                 <img src="<?php echo _prav_path_img_header_footer( 'img/dostigprev.jpg' ) ?>" alt="Наши достижения">
             </a>
         </div>

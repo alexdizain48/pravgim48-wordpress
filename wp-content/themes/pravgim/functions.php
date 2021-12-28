@@ -8,6 +8,8 @@ add_action('widgets_init', 'prav_register_widgets');
 
 add_filter('show_admin_bar', '__return_false');
 add_filter('fallback_intermediate_image_sizes', 'wpb_disable_pdf_previews');
+
+//удаление не нужных превьюх при звгрузки изображений
 add_filter('intermediate_image_sizes', 'delete_intermediate_image_sizes');
 function delete_intermediate_image_sizes($sizes)
 {
@@ -19,6 +21,47 @@ function delete_intermediate_image_sizes($sizes)
     ]);
 }
 
+//паттерны в новостях
+add_action('init', 'news_with_two_columns');
+function news_with_two_columns()
+{
+    register_block_pattern_category(
+        'news-with-two-columns-patterns',
+        [
+            'label' => esc_html__('Новости с двумя колонками', 'textdomain'),
+            esc_html__('Новости с одним видео из YouTube', 'textdomain')
+        ]
+    );
+    register_block_pattern(
+        'news-with-two-columns-patterns/intro-with-two-columns',
+        [
+            'title' => esc_html__('News with two columns', 'textdomain'),
+            'categories' => ['news-with-two-columns-patterns'],
+            'content' => file_get_contents(plugin_dir_path(__FILE__) . 'patterns/news-with-two-columns.html'),
+        ]
+    );
+}
+
+//новости с видео из YouTube
+/*add_action( 'init', 'news_with_one_youtube' );
+function news_with_one_youtube() {
+    register_block_pattern_category(
+        'news_with_one_youtube-patterns',
+        [
+            'label' => esc_html__( 'Новости с одним видео из YouTube', 'textdomain' )
+        ]
+    );
+    register_block_pattern(
+        'demo-patterns/intro-with-two-columns',
+        [
+            'title'      => esc_html__( 'News with one YouTube', 'textdomain' ),
+            'categories' => ['news_with_one_youtube-patterns'],
+            'content'    => file_get_contents( plugin_dir_path( __FILE__ ) . 'patterns/news-with-one-youtube.html' ),
+        ]
+    );
+}*/
+
+//пагинация в записях
 add_filter('navigation_markup_template', 'my_navigation_template', 10, 2);
 function my_navigation_template($template, $class)
 {
