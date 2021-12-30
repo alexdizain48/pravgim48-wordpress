@@ -2,6 +2,49 @@
 Theme Name: Pravgim
 */
 
+#mega-menu-wrap-menu-header {
+    background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item > a.mega-menu-link {
+    line-height: 50px;
+    height: auto;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 11px 0 11px;
+    vertical-align: baseline;
+    width: auto;
+    display: block;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 18%;
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item:first-child {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 9%;
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header a.mega-menu-link {
+    line-height: 1.15;
+}
+
+#mega-menu-wrap-menu-header .mega-menu-toggle {
+    z-index: 1;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
+    border-radius: 6px 6px 6px 6px;
+}
+
+
+
 .ngg-breadcrumbs {
     display: none;
 }
@@ -2430,6 +2473,14 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item {
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 100%;
+    }
+    #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item:first-child {
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 100%;
+    }
     .mapArea {
         height: 300px;
     }
@@ -2543,6 +2594,14 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item {
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 100%;
+    }
+    #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item:first-child {
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 100%;
+    }
     .infoGimn h2 {
         font-size: 2.325em;
         line-height: 110%;
