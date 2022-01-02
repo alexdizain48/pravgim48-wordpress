@@ -5,6 +5,8 @@
 get_header();
 ?>
 
+<?php get_template_part('tmp/breadcrumbs'); ?>
+
 <section>
     <div class="row">
         <div class="col-md-12">

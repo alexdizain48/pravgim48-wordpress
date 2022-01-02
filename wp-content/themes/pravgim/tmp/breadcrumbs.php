@@ -1,13 +1,15 @@
 <div class="row">
     <div class="col-md-12">
-        <ol class="breadcrumb">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="index_informacija.html">Информация</a>
-            </li>
-            <li>Обьявления</li>
-        </ol>
+
+        <ul class="breadcrumbs">
+            <?php if(function_exists('bcn_display_list')){ bcn_display_list(); } ?>
+        </ul>
+
+        <!--<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+            <?php /*if(function_exists('bcn_display'))
+            {
+                bcn_display();
+            }*/?>
+        </div>-->
     </div>
 </div>

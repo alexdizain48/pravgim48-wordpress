@@ -21,6 +21,13 @@ function delete_intermediate_image_sizes($sizes)
     ]);
 }
 
+//костыль для настроек плагина хлебных крошек
+function add_bcn_manage_options_to_admin() {
+    $role = get_role( 'administrator' );
+    $role->add_cap( 'bcn_manage_options' );
+}
+add_action( 'admin_init', 'add_bcn_manage_options_to_admin');
+
 //паттерны в новостях
 add_action('init', 'news_with_two_columns');
 function news_with_two_columns()

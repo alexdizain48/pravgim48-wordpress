@@ -35,12 +35,33 @@ Theme Name: Pravgim
 #mega-menu-wrap-menu-header #mega-menu-menu-header a.mega-menu-link {
     line-height: 1.15;
 }
-
 #mega-menu-wrap-menu-header .mega-menu-toggle {
     z-index: 1;
     cursor: pointer;
     background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
     border-radius: 6px 6px 6px 6px;
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title {
+    font-family: 'PT Serif', serif;
+    font-size: 1.55em;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: 1px dotted #ffffff;
+}
+#mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-megamenu > ul.mega-sub-menu {
+    z-index: 999;
+    border-radius: 0;
+    background-color: #E6A345;
+}
+#mega-menu-wrap-menu-header .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner {
+    background-color: #fff;
+}
+#mega-menu-wrap-menu-header .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::before {
+    background-color: #fff;
+}
+#mega-menu-wrap-menu-header .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::after {
+    background-color: #fff;
 }
 
 
@@ -1508,7 +1529,7 @@ h4 {
     font-size: 16px;
 }
 
-.breadcrumb {
+.breadcrumbs {
     background-color: #e6fbff;
     padding: 22px 15px 18px;
     margin: 0 0 -8px 0;
@@ -1516,21 +1537,17 @@ h4 {
     -moz-border-radius: 0;
     border-radius: 0;
 }
-
-.breadcrumb li {
-    margin-left: 3px;
-    font-size: 1em;
-    text-align: center;
+.breadcrumbs > li {
+    display: inline-block;
 }
-
-.breadcrumb > li + li::before {
+.breadcrumbs > li + li::before {
     color: #1b769e;
     content: "/ ";
     padding: 0 5px;
 }
-
-.breadcrumb li a {
+.breadcrumbs span a {
     color: #39f;
+    font-size: 14px;
 }
 
 p {
@@ -2473,6 +2490,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item {
+        border-bottom: 1px solid #ffffff;
+    }
     #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item {
         font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 100%;
@@ -2594,6 +2614,9 @@ footer p {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item {
+        border-bottom: 1px solid #ffffff;
+    }
     #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item {
         font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 100%;
