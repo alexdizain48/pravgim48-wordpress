@@ -5,6 +5,8 @@
 get_header();
 ?>
 
+<?php get_template_part('tmp/breadcrumbs');?>
+
 <!---------- CONTENTwrap ------------>
 <section>
     <div class="row">

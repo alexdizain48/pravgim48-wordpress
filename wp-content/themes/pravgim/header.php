@@ -104,6 +104,10 @@
                                      alt="Православная гимназия"></li>
                             <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_3.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
+                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_4.jpg' ) ?>"
+                                     alt="Православная гимназия"></li>
+                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_5.jpg' ) ?>"
+                                     alt="Православная гимназия"></li>
                         </ul>
                     </div>
                 </div>

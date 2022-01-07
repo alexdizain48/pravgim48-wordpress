@@ -185,7 +185,7 @@
     <div class="col-sm-6 col-md-4 mb15 text-center">
         <h3>Фотогалерея</h3>
         <div class="pano">
-            <a href="/albums">
+            <a href="informaciya-ob-obrazovatelnoy-organ/fotogalereya/">
                 <img src="<?php echo _prav_path_img_header_footer( 'img/logoGaller.JPG' ) ?>" alt="Фотогалерея">
             </a>
         </div>

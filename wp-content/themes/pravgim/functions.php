@@ -129,7 +129,6 @@ function prav_register_style()
 
     wp_enqueue_style('main_style',
         get_template_directory_uri() . "/style.css",
-        //_prav_assets_path('css/style.css'),
         [], 1.0, 'all');
 
     wp_enqueue_style('jquery_fancybox_style',

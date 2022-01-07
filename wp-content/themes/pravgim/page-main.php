@@ -135,13 +135,6 @@
                     система управления строится на основе сотрудничества, инициативы и творчества.</p>
             </section>
             <br>
-            <div class="row">
-                <div class="col-md-12 btnHref text-center">
-                    <a class="btn btn-large btn-success" href="index_about.html">Сведения об образовательной
-                        организации</a>
-                </div>
-            </div>
-            <br>
 
             <div class="clearfix"></div>
 

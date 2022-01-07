@@ -2,6 +2,7 @@
 Theme Name: Pravgim
 */
 
+/*mega-menu*/
 #mega-menu-wrap-menu-header {
     background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
 }
@@ -49,6 +50,9 @@ Theme Name: Pravgim
     font-style: italic;
     border-bottom: 1px dotted #ffffff;
 }
+#mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title:hover {
+    border-bottom: 1px dotted #ffffff;
+}
 #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-megamenu > ul.mega-sub-menu {
     z-index: 999;
     border-radius: 0;
@@ -65,7 +69,41 @@ Theme Name: Pravgim
 }
 
 
-
+/*photogallery*/
+.sl-overlay {
+    background: #e9f7b0;
+    opacity: 0.8;
+}
+.sl-wrapper .sl-navigation button {;
+    color: #0f7f1c;
+}
+.sl-wrapper .sl-close {
+    color: #0f7f1c;
+}
+.ngg-navigation span.current {
+    background: #3fa945;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.ngg-navigation span.current:hover {
+    background: #3fa945;
+}
+.ngg-navigation a.page-numbers {
+    background: #ffffff;
+    color: #00a0d2;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.ngg-navigation a.page-numbers:hover {
+    background: #3fa945;
+    color: #ffffff;
+}
 .ngg-breadcrumbs {
     display: none;
 }
@@ -406,7 +444,7 @@ img {
     cursor: pointer;
     position: fixed;
     right: 12px;
-    z-index: 9999;
+    z-index: 1034;
 }
 
 .row [class*="col-md"] {
@@ -487,7 +525,8 @@ header a:hover, header a:focus {
 
 .saint {
     position: relative;
-    z-index: 2147483634;
+    /*z-index: 2147483634;*/
+    z-index: 1034;
 }
 
 .saint img {
@@ -502,7 +541,8 @@ header a:hover, header a:focus {
 
 .birds {
     position: relative;
-    z-index: 2147483634;
+    /*z-index: 2147483634;*/
+    z-index: 1034;
 }
 
 .birds img {
@@ -541,8 +581,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -36px;
-        right: -41px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -576,8 +617,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -27px;
-        right: -41px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -609,8 +651,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -27px;
-        right: -41px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -642,8 +685,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -27px;
-        right: -41px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -675,8 +719,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -27px;
-        right: -41px;
+        top: 101px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -708,8 +753,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -30px;
-        right: -41px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -741,8 +787,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -29px;
-        right: -30px;
+        top: 96px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -774,9 +821,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -29px;
-        right: -30px;
-        width: 33%;
+        top: 87px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -801,9 +848,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -29px;
+        top: 105px;
         right: -14px;
-        width: 33%;
+        width: 20%;
     }
 }
 
@@ -821,9 +868,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -11px;
-        right: -29px;
-        width: 31%;
+        top: 109px;
+        right: -14px;
+        width: 20%;
     }
 
     .headerLogo {
@@ -878,9 +925,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -11px;
+        top: 87px;
         right: -29px;
-        width: 31%;
+        width: 21%;
     }
 }
 
@@ -946,9 +993,9 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -23px;
-        right: -23px;
-        width: 33%;
+        top: 87px;
+        right: -29px;
+        width: 21%;
     }
 }
 
@@ -1218,8 +1265,8 @@ header a:hover, header a:focus {
 
     .saint img {
         position: absolute;
-        top: -17px;
-        right: -70px;
+        top: -10px;
+        right: -90px;
         width: 33%;
     }
 }
@@ -2038,7 +2085,9 @@ a:focus {
     margin: 19px auto;
     display: table;
 }
-
+.pagins ul li{
+    text-indent: 0;
+}
 .pagination-sm > li > a {
     font-size: 12px;
     padding: 0 auto;
@@ -2100,7 +2149,8 @@ a:focus {
 .navbar {
     margin-bottom: -14px;
     border: none !important;
-    z-index: 9997;
+    /*z-index: 9997;*/
+    z-index: 1034;
 }
 
 .navbar .navbar-inner {
@@ -2489,7 +2539,21 @@ footer p {
     width: 100%;
 }
 
+@media (min-width: 980px) and (max-width: 1199px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item > a.mega-menu-link {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 979px){
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
+        color: #fff;
+        background: #e99623;
+    }
+}
 @media (max-width: 768px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header{
+        background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
+    }
     #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item {
         border-bottom: 1px solid #ffffff;
     }
@@ -2500,6 +2564,9 @@ footer p {
     #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item:first-child {
         font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 100%;
+    }
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+        background: #E69F28;
     }
     .mapArea {
         height: 300px;
@@ -2610,6 +2677,15 @@ footer p {
         margin-bottom: -47px;
         margin-top: -16px;
         z-index: 9998;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-menu-header #mega-menu-menu-header li.mega-menu-megamenu.mega-menu-item.mega-toggle-on ul.mega-sub-menu {
+        border-bottom: 1px solid #fff;
+    }
+    #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-menu-header #mega-menu-menu-header > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
+        background: #e99623;
     }
 }
 
