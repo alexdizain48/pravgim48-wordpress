@@ -4,32 +4,32 @@
             <div id="owl-demo" class="owl-carousel">
                 <div class="item">
                     <a href="index_plan-raboty-progimnazii.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/preschool.jpg' ) ?>" alt="Дошкольники">
+                        <img src="<?php echo _prav_path_img( 'preschool.jpg' ) ?>" alt="Дошкольники">
                     </a>
                 </div>
                 <div class="item">
                     <a href="index_horeografija.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/choreography.jpg' ) ?>" alt="Хореография">
+                        <img src="<?php echo _prav_path_img( 'choreography.jpg' ) ?>" alt="Хореография">
                     </a>
                 </div>
                 <div class="item">
                     <a href="index_bogoslugebnoje-penije.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/liturgicalSinging.jpg' ) ?>" alt="Богослужебное пение">
+                        <img src="<?php echo _prav_path_img( 'liturgicalSinging.jpg' ) ?>" alt="Богослужебное пение">
                     </a>
                 </div>
                 <div class="item">
                     <a href="index_sport-sekzii.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/sportsClubs.jpg' ) ?>" alt="Спортивные секции">
+                        <img src="<?php echo _prav_path_img( 'sportsClubs.jpg' ) ?>" alt="Спортивные секции">
                     </a>
                 </div>
                 <div class="item">
                     <a href="index_palitra.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/palette.jpg' ) ?>" alt="Палитра">
+                        <img src="<?php echo _prav_path_img( 'palette.jpg' ) ?>" alt="Палитра">
                     </a>
                 </div>
                 <div class="item">
                     <a href="index_teatralnaja-studija.html">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/theatreStudio.jpg' ) ?>" alt="Театральная студия">
+                        <img src="<?php echo _prav_path_img( 'theatreStudio.jpg' ) ?>" alt="Театральная студия">
                     </a>
                 </div>
             </div>
@@ -105,7 +105,7 @@
 <div class="row contacts">
     <div class="col-md-10 col-md-offset-1">
         <a href="https://год2020.рф">
-            <img class="img-responsive" src="<?php echo _prav_path_img_header_footer( 'img/banner_den_pobedi.jpg' ) ?>" alt="День Победы">
+            <img class="img-responsive" src="<?php echo _prav_path_img( 'banner_den_pobedi.jpg' ) ?>" alt="День Победы">
         </a>
 
     </div>
@@ -138,7 +138,7 @@
         <h3>СМИ о гимназии</h3>
         <div class="pano">
             <a href="/pages/smi-o-gimnazii">
-                <img src="<?php echo _prav_path_img_header_footer( 'img/smiprev.jpg' ) ?>" alt="СМИ о гимназии">
+                <img src="<?php echo _prav_path_img( 'smiprev.jpg' ) ?>" alt="СМИ о гимназии">
             </a>
         </div>
     </div>
@@ -147,7 +147,7 @@
         <h3>Журнал гимназии</h3>
         <div class="pano">
             <a href="/pages/zhurnal-gimnazii">
-                <img src="<?php echo _prav_path_img_header_footer( 'img/oyblprev.jpg' ) ?>" alt="Отблески">
+                <img src="<?php echo _prav_path_img( 'oyblprev.jpg' ) ?>" alt="Отблески">
             </a>
         </div>
     </div>
@@ -168,7 +168,7 @@
                $category_link_advert = get_category_link( $category_id );
             ?>
             <a href="<?php echo $category_link_advert; ?>">
-                <img src="<?php echo _prav_path_img_header_footer( 'img/dostigprev.jpg' ) ?>" alt="Наши достижения">
+                <img src="<?php echo _prav_path_img( 'dostigprev.jpg' ) ?>" alt="Наши достижения">
             </a>
         </div>
     </div>
@@ -177,7 +177,7 @@
         <h3>Путешествие по гимназии</h3>
         <div class="pano">
             <a href="/pages/vtour">
-                <img src="<?php echo _prav_path_img_header_footer( 'img/logoTur.jpg' ) ?>" alt="Виртуальный тур">
+                <img src="<?php echo _prav_path_img( 'logoTur.jpg' ) ?>" alt="Виртуальный тур">
             </a>
         </div>
     </div>
@@ -186,7 +186,7 @@
         <h3>Фотогалерея</h3>
         <div class="pano">
             <a href="informaciya-ob-obrazovatelnoy-organ/fotogalereya/">
-                <img src="<?php echo _prav_path_img_header_footer( 'img/logoGaller.JPG' ) ?>" alt="Фотогалерея">
+                <img src="<?php echo _prav_path_img( 'logoGaller.JPG' ) ?>" alt="Фотогалерея">
             </a>
         </div>
     </div>
@@ -237,19 +237,19 @@
         <div class="social_icons">
                 <span>
                     <a href="http://vk.com/pravoslavnai.gimnazia">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/logoWk.png' ) ?>" alt="ВК">
+                        <img src="<?php echo _prav_path_img( 'img/logoWk.png' ) ?>" alt="ВК">
                     </a>
                 </span>
             <span>
                     <a href="https://www.youtube.com/channel/UCNo5KbrAMWQQRyjUCCONShQ">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/logoYtB.png' ) ?>" alt="YouTube">
+                        <img src="<?php echo _prav_path_img( 'img/logoYtB.png' ) ?>" alt="YouTube">
                     </a>
 		         </span>
         </div>
         <div class="social_icons">
                 <span>
                     <a href="https://play.google.com/store/apps/details?id=com.alart48.pravgim48">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/google-play-logo.png' ) ?>" alt="GooglePlay">
+                        <img src="<?php echo _prav_path_img( 'img/google-play-logo.png' ) ?>" alt="GooglePlay">
                     </a>
                 </span>
         </div>
@@ -264,18 +264,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="index.html"><img src="<?php echo _prav_assets_path( 'img/footerLogo.png' ) ?>" alt="Православная гимназия им. прп. Амвросия Оптинского Липецкой Епархии"></a>
+                <a href="index.html"><img src="<?php echo _prav_path_img( 'footerLogo.png' ) ?>" alt="Православная гимназия им. прп. Амвросия Оптинского Липецкой Епархии"></a>
             </div>
         </div>
     </div>
 </footer>
 
 <!-- tuTopButton -->
-<a href="#" id="toTop"><img src="<?php echo _prav_assets_path( 'img/toTop.png' ) ?>" border="0" align="absmiddle"/></a>
+<a href="#" id="toTop"><img src="<?php echo _prav_path_img( 'toTop.png' ) ?>" border="0" align="absmiddle"/></a>
 <?php wp_footer(); ?>
-<!--<a href="#" id="toTop"><img src="img/toTop.png" border="0" align="absmiddle"/></a>
-<script src="js/toTop.js" type="text/javascript"></script>
-<script src="js/modernizr.custom.js"></script>-->
 
 
 </body>

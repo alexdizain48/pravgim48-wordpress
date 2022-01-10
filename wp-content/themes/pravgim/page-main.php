@@ -10,7 +10,7 @@
     <div class="col-md-3">
         <div class="priestFoto">
             <div class="thumbnail">
-                <img src="<?php echo _prav_assets_path( 'img/Mitropolit.jpg' ) ?>" alt="Митрополит Липецкий и Задонский Арсений">
+                <img src="<?php echo _prav_path_img( 'Mitropolit.jpg' ) ?>" alt="Митрополит Липецкий и Задонский Арсений">
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
                     <h1>О гимназии</h1>
                 </div>
                 <div class="thumbnailLeft">
-                    <img src="<?php echo _prav_assets_path( 'img/gymAbout.jpg' ) ?>" alt="Православная гимназия в Липецке">
+                    <img src="<?php echo _prav_path_img( 'gymAbout.jpg' ) ?>" alt="Православная гимназия в Липецке">
                 </div>
                 <p>Негосударственное общеобразовательное учреждение Православная гимназия имени преподобного
                     Амвросия Оптинского Липецкой Епархии Русской Православной Церкви (Московский Патриархат) –
@@ -78,7 +78,7 @@
             <div class="clearfix"></div>
 
             <div class="dividerKredo">
-                <img src="<?php echo _prav_assets_path( 'uploads/img/dividerKredo.png' ) ?>">
+                <img src="<?php echo _prav_path_img( 'dividerKredo.png' ) ?>">
             </div>
 
             <section>
@@ -86,7 +86,7 @@
                     <h1>Кроме учёбы</h1>
                 </div>
                 <div class="thumbnailLeft">
-                    <img src="<?php echo _prav_assets_path( 'img/gymAbout1.jpg' ) ?>" alt="Православная гимназия в Липецке">
+                    <img src="<?php echo _prav_path_img( 'gymAbout1.jpg' ) ?>" alt="Православная гимназия в Липецке">
                 </div>
                 <p>В настоящее время Православная гимназия объединяет в себе:</p>
                 <ul>
@@ -139,7 +139,7 @@
             <div class="clearfix"></div>
 
             <div class="dividerKredo">
-                <img src="<?php echo _prav_assets_path( 'uploads/img/dividerKredo.png' ) ?>">
+                <img src="<?php echo _prav_path_img( 'dividerKredo.png' ) ?>">
             </div>
 
         </div>

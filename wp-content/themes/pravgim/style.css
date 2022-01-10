@@ -2,6 +2,27 @@
 Theme Name: Pravgim
 */
 
+.widgettitle {
+    display: none;
+}
+#bt_widget-vi-on a {
+    text-align: center;
+    cursor: pointer;
+    background: #14cc2c;
+    box-shadow: none;
+    border: 0 none;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 9px 17px 11px;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1px;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
 /*mega-menu*/
 #mega-menu-wrap-menu-header {
     background: linear-gradient(to bottom, #e69f28 0%, #eec03d 50%, #eec03d 54%, #e69f28 100%);
@@ -70,6 +91,19 @@ Theme Name: Pravgim
 
 
 /*photogallery*/
+.ngg-albumoverview.default-view .ngg-album-compact {
+    text-align: center;
+    margin: 0 10px 10px 0 !important;
+    padding: 0 !important;
+    border: none;
+    box-shadow: none;
+    float: none;
+    display: inline-block;
+}
+.ngg-album-compactbox {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px!important;
+}
 .sl-overlay {
     background: #e9f7b0;
     opacity: 0.8;
@@ -84,7 +118,8 @@ Theme Name: Pravgim
     background: #3fa945;
     font-size: 14px;
     font-weight: normal;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    line-height: 2.1;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
@@ -94,9 +129,11 @@ Theme Name: Pravgim
 .ngg-navigation a.page-numbers {
     background: #ffffff;
     color: #00a0d2;
+    margin-right: 6px;
     font-size: 14px;
     font-weight: normal;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    line-height: 2.1;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
@@ -119,15 +156,21 @@ Theme Name: Pravgim
     display: block !important;
     margin-bottom: 10px;
 }
+.ngg-albumoverview.default-view .ngg-album-compact h4 {
+    padding: 10px 10px 15px 10px;
+    background-color: #ffffff;
+}
 .ngg-album-compact h4 {
     font-weight: normal;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;;
     margin: 0;
-    margin-top: 10px;
+    text-align: center;
 }
 .ngg-albumoverview.default-view .ngg-album-compact h4 .ngg-album-desc {
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 1.25em;
+    max-width: 299px !important;
+    color: #1b769e;
+    font-family: Times, "Times New Roman", serif;
+    letter-spacing: 0;
     box-shadow: none;
 }
 .ngg-galleryoverview {
@@ -2117,6 +2160,12 @@ a:focus {
     color: #FFFFFF;
     background-color: #3fa945;
 }
+
+.pagination-sm > li > a, .pagination-sm > li > span {
+    padding: 10px 15px;
+    margin-right: 4px;
+}
+
 
 .infoGimn .spisokLiz ul {
     line-height: 150%;

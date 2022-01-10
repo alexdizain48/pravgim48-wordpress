@@ -48,13 +48,20 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <span id="uhvb" class="pull-right">
+        <div class="col-md-4 col-md-offset-8 col-sm-4 col-sm-offset-8">
+            <div class="pull-right">
+                <?php
+                if(is_active_sidebar('prav-for-the-visually-impaired')){
+                    dynamic_sidebar('prav-for-the-visually-impaired');
+                }
+                ?>
+            </div>
+            <!--<span id="uhvb" class="pull-right">
                       <a id="specialButton" href="#">
                        <img class="uhvb-img" alt="Версия для слабовидящих"
-                            src="<?php echo _prav_path_img_header_footer( 'img/vs.png' ) ?>" align="center">
+                            src="<?php /*echo _prav_path_img( 'vs.png' ) */?>" align="center">
                    </a>
-                  </span>
+                  </span>-->
         </div>
     </div>
 </div>
@@ -66,14 +73,14 @@
 
                 <div class="logo_konkurs">
                     <a href="https://www.sait2019.ru/uchastniki" target="_blank">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/logo-konk.png' ) ?>">
+                        <img src="<?php echo _prav_path_img( 'logo-konk.png' ) ?>">
                     </a>
                 </div>
 
                 <div class="headBlockText">
                     <a href="<?php bloginfo('url'); ?>">
                         <div class="headerText">
-                            <img class="img-responsive" src="<?php echo _prav_path_img_header_footer( 'img/headerText.png' ) ?>"
+                            <img class="img-responsive" src="<?php echo _prav_path_img( 'headerText.png' ) ?>"
                                  alt="Православная гимназия">
                         </div>
                         <div class="headerName_1">имени преподобного Амвросия Оптинского</div>
@@ -83,30 +90,30 @@
 
                 <div class="row saintMini">
                     <div class="col-md-12 text-center">
-                        <img src="<?php echo _prav_path_img_header_footer( 'img/headerIcon.jpg' ) ?>"/>
+                        <img src="<?php echo _prav_path_img( 'headerIcon.jpg' ) ?>"/>
                     </div>
                 </div>
 
                 <div class="row slider center">
                     <div class="col-md-12">
                         <div class="birds">
-                            <img src="<?php echo _prav_path_img_header_footer( 'img/birds.png' ) ?>"/>
+                            <img src="<?php echo _prav_path_img( 'birds.png' ) ?>"/>
                         </div>
 
                         <div class="saint">
-                            <img src="<?php echo _prav_path_img_header_footer( 'img/headerIcon.jpg' ) ?>"/>
+                            <img src="<?php echo _prav_path_img( 'headerIcon.jpg' ) ?>"/>
                         </div>
 
                         <ul class="rslides" id="slider1">
-                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_1.jpg' ) ?>"
+                            <li><img src="<?php echo _prav_path_img( 'slider/slider_1.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
-                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_2.jpg' ) ?>"
+                            <li><img src="<?php echo _prav_path_img( 'slider/slider_2.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
-                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_3.jpg' ) ?>"
+                            <li><img src="<?php echo _prav_path_img( 'slider/slider_3.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
-                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_4.jpg' ) ?>"
+                            <li><img src="<?php echo _prav_path_img( 'slider/slider_4.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
-                            <li><img src="<?php echo _prav_path_img_header_footer( 'img/slider/slider_5.jpg' ) ?>"
+                            <li><img src="<?php echo _prav_path_img( 'slider/slider_5.jpg' ) ?>"
                                      alt="Православная гимназия"></li>
                         </ul>
                     </div>
@@ -115,7 +122,7 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="headerLogo">
-                    <img src="<?php echo _prav_path_img_header_footer( 'img/headerLogo.png' ) ?>"/>
+                    <img src="<?php echo _prav_path_img( 'headerLogo.png' ) ?>"/>
                 </div>
                 <div class="headerLogoText text-center">
                     <p>По благословению Высокопреосвящейнешего Митрополита Липецкого и Задонского Никона</p>
@@ -128,7 +135,7 @@
 <div class="container themesImg">
     <div class="row">
         <div class="col-md-12 text-center">
-            <img src="<?php echo _prav_path_img_header_footer( 'img/Georgievskaya-lenta.png' ) ?>"/>
+            <img src="<?php echo _prav_path_img( 'Georgievskaya-lenta.png' ) ?>"/>
         </div>
     </div>
 </div>

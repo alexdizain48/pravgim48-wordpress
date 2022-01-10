@@ -100,9 +100,9 @@ function _prav_assets_path($path)
     return get_template_directory_uri() . '/assets/' . $path;
 }
 
-function _prav_path_img_header_footer($path)
+function _prav_path_img($path)
 {
-    return get_template_directory_uri() . '/assets/uploads/' . $path;
+    return get_template_directory_uri() . '/assets/uploads/img/' . $path;
 }
 
 function prav_register_style()
@@ -193,6 +193,13 @@ function prav_register_widgets()
         'name' => 'Контакты',
         'id' => 'prav-contacts',
         'description' => 'Информация о контактах',
+        'before_widget' => null,
+        'after_widget' => null
+    ]);
+    register_sidebar([
+        'name' => 'Виджет для слабовидящих',
+        'id' => 'prav-for-the-visually-impaired',
+        'description' => 'Кнопка для слабовидящих',
         'before_widget' => null,
         'after_widget' => null
     ]);
