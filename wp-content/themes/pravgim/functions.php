@@ -81,6 +81,28 @@ function my_navigation_template($template, $class)
 	';
 }
 
+add_action( 'admin_init', 'my_remove_menu_pages' );
+function my_remove_menu_pages() {
+
+    global $user_ID;
+
+    if ( current_user_can( 'editor' ) ) {
+        remove_menu_page( 'edit.php?post_type=thirstylink' );
+        remove_menu_page( 'edit.php?post_type=wprss_feed' );
+        remove_menu_page( 'authorhreview' );
+        remove_menu_page('edit.php'); // Записи
+        remove_menu_page('upload.php'); // Медиафайлы
+        remove_menu_page('link-manager.php'); // Ссылки
+        remove_menu_page('edit-comments.php'); // Комментарии
+        remove_menu_page('edit.php?post_type=page'); // Страницы
+        remove_menu_page('plugins.php'); // Плагины
+        remove_menu_page('themes.php'); // Внешний вид
+        remove_menu_page('users.php'); // Пользователи
+        remove_menu_page('tools.php'); // Инструменты
+        remove_menu_page('options-general.php'); // Параметры
+    }
+}
+
 // отключаем миниатюры при загрузке PDF
 function wpb_disable_pdf_previews()
 {
@@ -93,6 +115,11 @@ function prav_setup()
     register_nav_menu('menu-header', 'Верхнее меню');
     add_theme_support('custom-logo');//фавикон
     add_theme_support('title-tag');
+}
+
+function _prav_main_path($path)
+{
+    return home_url() . '/' . $path;
 }
 
 function _prav_assets_path($path)
@@ -210,64 +237,3 @@ function prav_register_widgets()
         'after_widget' => null
     ]);
 }
-
-//custom_dir---
-add_filter('wp_handle_upload_prefilter', 'tp_handle_upload_prefilter');
-add_filter('wp_handle_upload', 'tp_handle_upload');
-function tp_handle_upload_prefilter($file)
-{
-    add_filter('upload_dir', 'tp_custom_upload_dir');
-    return $file;
-}
-
-function tp_handle_upload($fileinfo)
-{
-    remove_filter('upload_dir', 'tp_custom_upload_dir');
-    return $fileinfo;
-}
-
-function tp_custom_upload_dir($path)
-{
-    $use_default_dir = (isset($_REQUEST['post_id']) && $_REQUEST['post_id'] == 0) ? true : false;
-    if (!empty($path['error']) || $use_default_dir)
-        return $path;
-    $extension = substr(strrchr($_POST['name'], '.'), 1);
-    switch ($extension) {
-        case 'jpg':
-        case 'jpeg':
-        case 'JPG':
-        case 'JPEG':
-        case 'png':
-        case 'PNG':
-        case 'gif':
-            $customdir = '/images';
-            break;
-
-        case 'zip':
-        case 'rar':
-            $customdir = '/arcives';
-            break;
-
-        case 'pdf':
-            $customdir = '/pdf';
-            break;
-
-        case 'txt':
-        case 'doc':
-        case 'docx':
-        case 'xlsx':
-            $customdir = '/documents';
-            break;
-
-        default:
-            $customdir = '/others';
-            break;
-    }
-    $path['path'] = str_replace($path['subdir'], '', $path['path']);
-    $path['url'] = str_replace($path['subdir'], '', $path['url']);
-    $path['subdir'] = $customdir;
-    $path['path'] .= $customdir;
-    $path['url'] .= $customdir;
-    return $path;
-}
-//-----

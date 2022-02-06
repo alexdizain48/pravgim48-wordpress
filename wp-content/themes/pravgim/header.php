@@ -20,28 +20,8 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700italic&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
 
-    <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="css/responsiveslides.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/jquery.fancybox.css" rel="stylesheet">-->
-
-
     <link rel="icon" type="image/ico" href="favicon.ico">
     <?php wp_head(); ?>
-
-    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-    <!--<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>-->
-    <!--<script src="js/jquery.min.js"></script>
-    <script src="js/uhpv-full.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="js/allScript.js"></script>-->
-
 
 </head>
 
@@ -56,12 +36,6 @@
                 }
                 ?>
             </div>
-            <!--<span id="uhvb" class="pull-right">
-                      <a id="specialButton" href="#">
-                       <img class="uhvb-img" alt="Версия для слабовидящих"
-                            src="<?php /*echo _prav_path_img( 'vs.png' ) */?>" align="center">
-                   </a>
-                  </span>-->
         </div>
     </div>
 </div>
@@ -132,13 +106,13 @@
     </div>
 </header>
 
-<div class="container themesImg">
+<!--<div class="container themesImg">
     <div class="row">
         <div class="col-md-12 text-center">
-            <img src="<?php echo _prav_path_img( 'Georgievskaya-lenta.png' ) ?>"/>
+            <img src="<?php /*echo _prav_path_img( 'Georgievskaya-lenta.png' ) */?>"/>
         </div>
     </div>
-</div>
+</div>-->
 
 <?php
 /*  if(is_active_sidebar('prav-holiday')){

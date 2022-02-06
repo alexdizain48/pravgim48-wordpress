@@ -3,33 +3,33 @@
         <div class="col-md-12">
             <div id="owl-demo" class="owl-carousel">
                 <div class="item">
-                    <a href="index_plan-raboty-progimnazii.html">
-                        <img src="<?php echo _prav_path_img( 'preschool.jpg' ) ?>" alt="Дошкольники">
+                    <a href="<?php echo _prav_main_path('vospitanie/doshkolnaya-gruppa/') ?>">
+                        <img src="<?php echo _prav_path_img('preschool.jpg') ?>" alt="Дошкольники">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="index_horeografija.html">
-                        <img src="<?php echo _prav_path_img( 'choreography.jpg' ) ?>" alt="Хореография">
+                    <a href="<?php echo _prav_main_path('vospitanie/khoreografiya/') ?>">
+                        <img src="<?php echo _prav_path_img('choreography.jpg') ?>" alt="Хореография">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="index_bogoslugebnoje-penije.html">
-                        <img src="<?php echo _prav_path_img( 'liturgicalSinging.jpg' ) ?>" alt="Богослужебное пение">
+                    <a href="<?php echo _prav_main_path('vospitanie/bogosluzhebnoe-penie/') ?>">
+                        <img src="<?php echo _prav_path_img('liturgicalSinging.jpg') ?>" alt="Богослужебное пение">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="index_sport-sekzii.html">
-                        <img src="<?php echo _prav_path_img( 'sportsClubs.jpg' ) ?>" alt="Спортивные секции">
+                    <a href="<?php echo _prav_main_path('vospitanie/sportivnye-sekcii/') ?>">
+                        <img src="<?php echo _prav_path_img('sportsClubs.jpg') ?>" alt="Спортивные секции">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="index_palitra.html">
-                        <img src="<?php echo _prav_path_img( 'palette.jpg' ) ?>" alt="Палитра">
+                    <a href="<?php echo _prav_main_path('vospitanie/palitra/') ?>">
+                        <img src="<?php echo _prav_path_img('palette.jpg') ?>" alt="Палитра">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="index_teatralnaja-studija.html">
-                        <img src="<?php echo _prav_path_img( 'theatreStudio.jpg' ) ?>" alt="Театральная студия">
+                    <a href="<?php echo _prav_main_path('vospitanie/teatralnaya-studiya/') ?>">
+                        <img src="<?php echo _prav_path_img('theatreStudio.jpg') ?>" alt="Театральная студия">
                     </a>
                 </div>
             </div>
@@ -53,17 +53,17 @@
                 'category' => 5,
                 'post_status' => 'publish',
             );
-            $result = wp_get_recent_posts( $args );
-            foreach( $result as $p ){
+            $result = wp_get_recent_posts($args);
+            foreach ($result as $p) {
                 ?>
-                  <li><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></li>
+                <li><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></li>
                 <?php
             }
             ?>
         </ul>
         <?php
-           $category_id = get_cat_ID( 'Новости' );
-           $category_link_news = get_category_link( $category_id );
+        $category_id = get_cat_ID('Новости');
+        $category_link_news = get_category_link($category_id);
         ?>
         <a class="more" href="<?php echo $category_link_news; ?>"><p>Все новости</p></a>
     </div>
@@ -78,8 +78,8 @@
                     'category' => 6,
                     'post_status' => 'publish',
                 );
-                $result = wp_get_recent_posts( $args );
-                foreach( $result as $p ){
+                $result = wp_get_recent_posts($args);
+                foreach ($result as $p) {
                     ?>
                     <li><a href="<?php echo get_permalink($p['ID']) ?>"><?php echo $p['post_title'] ?></a></li>
                     <?php
@@ -87,8 +87,8 @@
                 ?>
             </ul>
             <?php
-               $category_id = get_cat_ID( 'Объявления' );
-               $category_link_advert = get_category_link( $category_id );
+            $category_id = get_cat_ID('Объявления');
+            $category_link_advert = get_category_link($category_id);
             ?>
             <a class="more" href="<?php echo $category_link_advert; ?>"><p>Подробнее....</p></a>
         </div>
@@ -105,7 +105,7 @@
 <div class="row contacts">
     <div class="col-md-10 col-md-offset-1">
         <a href="https://год2020.рф">
-            <img class="img-responsive" src="<?php echo _prav_path_img( 'banner_den_pobedi.jpg' ) ?>" alt="День Победы">
+            <img class="img-responsive" src="<?php echo _prav_path_img('banner_den_pobedi.jpg') ?>" alt="День Победы">
         </a>
 
     </div>
@@ -137,8 +137,8 @@
     <div class="col-sm-6 col-md-4 center">
         <h3>СМИ о гимназии</h3>
         <div class="pano">
-            <a href="/pages/smi-o-gimnazii">
-                <img src="<?php echo _prav_path_img( 'smiprev.jpg' ) ?>" alt="СМИ о гимназии">
+            <a href="<?php echo _prav_main_path('informaciya/smi-o-gimnazii/') ?>">
+                <img src="<?php echo _prav_path_img('smiprev.jpg') ?>" alt="СМИ о гимназии">
             </a>
         </div>
     </div>
@@ -146,8 +146,8 @@
     <div class="col-sm-6 col-md-4 center">
         <h3>Журнал гимназии</h3>
         <div class="pano">
-            <a href="/pages/zhurnal-gimnazii">
-                <img src="<?php echo _prav_path_img( 'oyblprev.jpg' ) ?>" alt="Отблески">
+            <a href="<?php echo _prav_main_path('informaciya/zhurnal-gimnazii/') ?>">
+                <img src="<?php echo _prav_path_img('oyblprev.jpg') ?>" alt="Отблески">
             </a>
         </div>
     </div>
@@ -164,11 +164,11 @@
         <h3>Достижения</h3>
         <div class="pano">
             <?php
-               $category_id = get_cat_ID( 'Достижения' );
-               $category_link_advert = get_category_link( $category_id );
+            $category_id = get_cat_ID('Достижения');
+            $category_link_advert = get_category_link($category_id);
             ?>
             <a href="<?php echo $category_link_advert; ?>">
-                <img src="<?php echo _prav_path_img( 'dostigprev.jpg' ) ?>" alt="Наши достижения">
+                <img src="<?php echo _prav_path_img('dostigprev.jpg') ?>" alt="Наши достижения">
             </a>
         </div>
     </div>
@@ -176,8 +176,8 @@
     <div class="col-sm-6 col-md-4 mb15 text-center">
         <h3>Путешествие по гимназии</h3>
         <div class="pano">
-            <a href="/pages/vtour">
-                <img src="<?php echo _prav_path_img( 'logoTur.jpg' ) ?>" alt="Виртуальный тур">
+            <a href="<?php echo _prav_main_path('informaciya-ob-obrazovatelnoy-organ/puteshestvie-po-gimnazii/') ?>">
+                <img src="<?php echo _prav_path_img('logoTur.jpg') ?>" alt="Виртуальный тур">
             </a>
         </div>
     </div>
@@ -185,8 +185,8 @@
     <div class="col-sm-6 col-md-4 mb15 text-center">
         <h3>Фотогалерея</h3>
         <div class="pano">
-            <a href="informaciya-ob-obrazovatelnoy-organ/fotogalereya/">
-                <img src="<?php echo _prav_path_img( 'logoGaller.JPG' ) ?>" alt="Фотогалерея">
+            <a href="<?php echo _prav_main_path('informaciya-ob-obrazovatelnoy-organ/fotogalereya/') ?>">
+                <img src="<?php echo _prav_path_img('logoGaller.JPG') ?>" alt="Фотогалерея">
             </a>
         </div>
     </div>
@@ -211,17 +211,17 @@
                 <a href="mailto:prawgim@yandex.ru">prawgim@yandex.ru</a>
             </p>
             <?php
-            if(is_active_sidebar('prav-contacts')){
+            if (is_active_sidebar('prav-contacts')) {
                 dynamic_sidebar('prav-contacts');
             }
             ?>
-           <!-- <p>
-                Телефоны в Липецке
-                <br>
-                <abbr title="Телефон">Т: </abbr>
-                +7(4742) 28-80-76<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7(4742) 28-71-74
-            </p>-->
+            <!-- <p>
+                 Телефоны в Липецке
+                 <br>
+                 <abbr title="Телефон">Т: </abbr>
+                 +7(4742) 28-80-76<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7(4742) 28-71-74
+             </p>-->
         </div>
     </div>
     <div class="col-sm-6 col-md-4 center mb15">
@@ -237,22 +237,22 @@
         <div class="social_icons">
                 <span>
                     <a href="http://vk.com/pravoslavnai.gimnazia">
-                        <img src="<?php echo _prav_path_img( 'img/logoWk.png' ) ?>" alt="ВК">
+                        <img src="<?php echo _prav_path_img('logoWk.png') ?>" alt="ВК">
                     </a>
                 </span>
             <span>
                     <a href="https://www.youtube.com/channel/UCNo5KbrAMWQQRyjUCCONShQ">
-                        <img src="<?php echo _prav_path_img( 'img/logoYtB.png' ) ?>" alt="YouTube">
+                        <img src="<?php echo _prav_path_img('logoYtB.png') ?>" alt="YouTube">
                     </a>
 		         </span>
         </div>
-        <div class="social_icons">
+        <!-- <div class="social_icons">
                 <span>
                     <a href="https://play.google.com/store/apps/details?id=com.alart48.pravgim48">
-                        <img src="<?php echo _prav_path_img( 'img/google-play-logo.png' ) ?>" alt="GooglePlay">
+                        <img src="<?php /*echo _prav_path_img( 'google-play-logo.png' ) */ ?>" alt="GooglePlay">
                     </a>
                 </span>
-        </div>
+        </div>-->
     </div>
 </div>
 
@@ -264,14 +264,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="index.html"><img src="<?php echo _prav_path_img( 'footerLogo.png' ) ?>" alt="Православная гимназия им. прп. Амвросия Оптинского Липецкой Епархии"></a>
+                <a href="index.html"><img src="<?php echo _prav_path_img('footerLogo.png') ?>"
+                                          alt="Православная гимназия им. прп. Амвросия Оптинского Липецкой Епархии"></a>
             </div>
         </div>
     </div>
 </footer>
 
 <!-- tuTopButton -->
-<a href="#" id="toTop"><img src="<?php echo _prav_path_img( 'toTop.png' ) ?>" border="0" align="absmiddle"/></a>
+<a href="#" id="toTop"><img src="<?php echo _prav_path_img('toTop.png') ?>" border="0" align="absmiddle"/></a>
 <?php wp_footer(); ?>
 
 
